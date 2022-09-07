@@ -210,11 +210,14 @@ p {
     border-radius: 6px;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 16px;
+}
+
+.content__wrapper {
+    padding-left: 0;
 }
 
 .content__text {
@@ -268,6 +271,10 @@ p {
 @media screen and (max-width: 767px)  {
     .main__img {
         margin: auto;
+    }
+
+    .content__wrapper {
+        padding-left: 16px;
     }
 }
 

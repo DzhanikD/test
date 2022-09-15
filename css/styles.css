@@ -30,18 +30,19 @@ body {
 }
 
 .header {
+    width: 100%;
+    min-width: 320px;
+}
+
+.header__page {
+    padding-left: 16px;
+    padding-right: 16px;
     height: 88px;
     display: flex;
     align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #D9FFF5;
-    min-width: 320px;
-    width: 100%;
-}
-
-.header-page {
-    padding-left: 16px;
-    padding-right: 16px;
+    justify-content: space-between;
 }
 
 .button{
@@ -63,7 +64,7 @@ body {
 .button__icon {
     margin-top: auto;
     margin-bottom: auto;
- }
+}
 
  .header__logo {
     position: absolute;
@@ -75,46 +76,57 @@ body {
     height: 50.81px; 
 }
 
-.divider {
+.header__logo::before {
+    content: "";
+    position: absolute;
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
     border-radius: 1px;
     vertical-align: middle;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
-    margin-right: 20px;   
+    left: -22px;
+    top: 10px;
+    display: none;
 }
  
  .header__divider-hidden {
-     display: none;
+    display: none;
 }   
 
- .button-wrapper{
-    display: flex;
-    margin-left: auto;
-}
  
-.button-wrapper__hidden {
-      display: flex;
-      display: none;
+.button-row {
+    display: flex;
+    display: none;
 }
 
-.button-wrapper__right {
+.button-wrapper {
     display: flex;
+}
+
+.button-wrapper__contacts:first-child::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+    right: 130px;
+    top: 26px;    
+}
+
+.button-row__contacts {
+    margin-right: 16px;
+}
+
+.button-row__contacts:last-child {
+    margin-right: 42px;
 }
 
 .button-wrapper__contacts:not(:last-child) {
     margin-right: 16px;
 }
 
-.header-hidden__button-contacts:not(:last-child) {
-    margin-right: 16px;
-}
-
 .main {
-    /*overflow: hidden;*/
     width: 100%;
 }
 
@@ -127,7 +139,6 @@ body {
 .main__title {
     padding: 24px 16px;
     margin: 0px;
-
 }
 
 .title {
@@ -147,15 +158,15 @@ body {
     width: 4px;
 }
 
-.header-hidden {
+.header-button {
     display: none;
 }
 
-.header-hidden__button-first {
-    padding-right: 16px;
+.header-button__wrapper:not(:last-child) {
+    padding-right: 32px;
 }
 
-.header-hidden__wrapper {
+.header-button__wrapper {
     display: flex;
     font-family: 'TT Lakes';
     font-size: 16px;
@@ -169,32 +180,28 @@ body {
     cursor: pointer;
 }
 
-.header-hidden__text {
+.header-button__text {
     padding-right: 8px;
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
+.main__content {
+    padding-top: 16px;
 }
 
 .nav__list {
     display: flex;
-    margin: 0;
-    padding-left: 16px;
-    padding-bottom: 6px;
     align-items: center;
     width: 100%;
     position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
+
+.main__nav {
+    padding-left: 16px;
+}
+
 .nav__link {
     color: #7E7E82;
     display: inline-block;
@@ -202,9 +209,10 @@ p {
     border: 2px solid transparent;
     height: 40px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
-.nav__link:hover {
+.nav__link--active {
     border: 2px solid #B8FFEC;
     background-color: #fff;
     border-radius: 6px;
@@ -265,7 +273,6 @@ p {
 
 .main__img {
     width: 100%;
-    max-width: 320px;  
 }
 
 @media screen and (max-width: 767px)  {
@@ -290,14 +297,20 @@ p {
         max-width: 360px;
         border-radius: 6px;
     }
+
+    .main__nav {
+        padding-left: 24px;
+    }
     
-    .button-wrapper__hidden {
+    .button-row {
         display: flex;
+        margin-left: auto;
     }
 
     .main__title {
         padding-left: 24px;
     }
+
 
     .button-read {
         margin-top: 13px;
@@ -319,11 +332,13 @@ p {
         padding-right: 24px;
     }
 
-    .nav__list {
+    .nav-wrapper__inner {
         padding-bottom: 14px;
         padding-left: 24px;
     }
-    .header__divider-hidden {
+
+
+    .header__logo::before {
         display: block;
     } 
         
@@ -331,9 +346,13 @@ p {
         left: 106px;
     }
 
-    .header {
+    .header__page {
         padding-left: 24px;
-        padding-right: 40px;
+        padding-right: 24px;
+    }
+
+    .button-wrapper__contacts:first-child::before {
+        right: 140px;
     }
 }
 
@@ -343,9 +362,12 @@ p {
         
     }
 
+    .main__content {
+        padding-top: 32px
+    }
+
     .nav__list {
-        padding-bottom: 32px;
-        padding-left: 32px;
+        
         flex-wrap: wrap;
     }
 
@@ -353,8 +375,12 @@ p {
         display: none;
     }
 
-    .header-hidden {
+    .header-button {
         display: flex;
+    }
+
+    .main__nav {
+        padding-left: 32px;
     }
 
     .content__text {

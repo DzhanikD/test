@@ -1,0 +1,25 @@
+.button-read {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #F8F8F8;
+    border: 0;
+    white-space: nowrap;
+    letter-spacing: -0.2px;
+}
+
+.button-read:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.button-read__read-text {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+.button-read {
+    margin-top: 13px;
+}
+
+}

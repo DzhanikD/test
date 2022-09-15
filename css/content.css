@@ -1,0 +1,61 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__wrapper {
+    padding-left: 16px;
+}
+
+.content__text {
+    height: 90px;
+    overflow: hidden;
+}
+
+.content__about-us, p {
+    margin: 0px;
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    padding: 0;  
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content__read-more {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .content__wrapper{
+        padding-left: 0;
+    }
+
+    .content__text{
+        height: 160px;
+        overflow: hidden;
+        width: 87%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .content__text {
+        width: 92%;
+    }
+
+    .content__about-us {
+        line-height: 20px;
+    }
+
+    .content {
+        padding-left: 34px;
+    }
+}
+

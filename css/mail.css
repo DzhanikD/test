@@ -1,0 +1,9 @@
+.mail {
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+}
+
+.contacts__mail {
+    padding-bottom: 12px;
+}

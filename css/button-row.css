@@ -1,0 +1,19 @@
+.button-row {
+    display: flex;
+    display: none;
+}
+
+.button-row__contacts {
+    margin-right: 16px;
+}
+
+.button-row__contacts:last-child {
+    margin-right: 42px;
+}
+
+@media screen and (min-width: 768px) {
+    .button-row {
+        display: flex;
+        margin-left: auto;
+    }
+}

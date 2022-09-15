@@ -1,0 +1,19 @@
+.side-menu {
+    width: 320px;
+    box-shadow: 2px -40px 40px 0 rgb(162, 160, 160);
+    height: 100%;
+}
+
+.side-menu__list {
+    padding: 27px 24px;
+    padding-bottom: 268px;
+}
+
+.side-menu__button {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.side-menu__contacts {
+    padding-left: 24px;
+}

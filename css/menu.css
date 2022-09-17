@@ -1,11 +1,10 @@
-.menu__header {
+.side-menu__menu-header {
     display: flex;
     justify-content: space-between;
     padding: 23px 24px;
     align-items: center;
 } 
 
-.menu__logo {
-    position: absolute;
-    margin-left: 56.73px;
+.menu {
+    display: flex;
 }

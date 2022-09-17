@@ -17,6 +17,8 @@
 @import url(mail.css);
 @import url(tel.css);
 @import url(contacts.css);
+@import url(lang.css);
+@import url(menu-header.css);
 
 @font-face {
     font-family: TT Lakes;
@@ -35,3 +37,4 @@
     src: url(../fonts/TTLakes-Bold.woff) format('woff');
     font-weight: 700;
 }
+

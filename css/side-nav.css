@@ -32,10 +32,7 @@
     top: 108px;
 }
 
-.side-nav__link:hover {
-    color: #FF3E79;
-}
-
 .side-nav__item:hover{
     cursor: pointer;
+    color: #FF3E79;
 }

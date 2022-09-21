@@ -17,6 +17,10 @@
     transition-duration: 0.5s;
 }
 
+.button:hover .header-button__text {
+    color: #FF3E79;
+}
+
 .button__icon {
     margin-top: auto;
     margin-bottom: auto;

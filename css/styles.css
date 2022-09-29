@@ -38,3 +38,150 @@
     font-weight: 700;
 }
 
+
+.content-block {
+    border-top: 1px solid #D9FFF5;
+}
+.title-text {
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content-block__title {
+    padding: 16px;
+    margin: 0;
+    background: linear-gradient(90deg,#f8f8f8 0,#fff);
+}
+
+.swiper {
+    
+    width: auto;
+}
+
+.link-brand {
+    display: inline-block;
+    background: #fff;
+}
+
+.brand__inner {
+    /*width: auto;*/
+    width: 240px;
+    height: 72px;
+    padding-bottom: 34px;
+}
+
+.swiper-slide__link {
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid #EAEAEA;
+   border-radius: 6px;
+   align-items: center;
+}
+
+.content-block__swiper {
+    padding: 16px;
+}
+
+.link-brand__img {
+vertical-align: middle;
+padding-left: 16px;
+}
+
+.link-brand__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+    margin: 16px;
+}
+
+.link-brand__arrow {
+    padding: 14px 14px 14px 17px;
+}
+
+.swiper-wrapper {
+    /*padding-bottom: 27px;*/
+}
+
+.swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: #818181;
+   margin-right: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 12px; 
+    margin-left: 0;
+}
+
+.content-block__show-all {
+    display: none;
+}
+
+.button-show {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .content-block__show-all {
+        display: block;
+    }
+    
+     .swiper-pagination {
+        display: none;
+     }
+
+     .brand {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 72px;
+        gap: 24px;
+        height: 190px;
+        overflow: hidden;
+     }
+     
+     .brand-open {
+        height: 270px;
+     } 
+
+     
+     .brand__inner {
+        padding-bottom: 0;
+        width: 224px;
+     } 
+
+     .content-block__swiper {
+        padding: 24px;
+    }
+
+    .button-hidden {
+        display: block;
+    }
+    
+    .show-all {
+        display: none;
+    }
+
+    .brand-height {
+        height: 190px;
+    }
+
+    }
+
+
+    
+    
+    

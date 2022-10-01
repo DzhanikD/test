@@ -48,7 +48,7 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content-block__title {
@@ -58,20 +58,30 @@
 }
 
 .swiper {
-    
     width: auto;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 16px;
 }
 
 .link-brand {
     display: inline-block;
     background: #fff;
+    height: 72px;
+    width: 240px;
 }
 
-.brand__inner {
-    /*width: auto;*/
+/*.brand__inner {
+    /*width: auto;
     width: 240px;
-    height: 72px;
     padding-bottom: 34px;
+}*/
+
+.swiper-slide {
+    width: auto;
+    height: auto;
 }
 
 .swiper-slide__link {
@@ -84,6 +94,7 @@
 
 .content-block__swiper {
     padding: 16px;
+   
 }
 
 .link-brand__img {
@@ -114,67 +125,66 @@ padding-left: 16px;
     background: #B5B6BC;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin-right: 12px; 
-    margin-left: 0;
-}
-
-.content-block__show-all {
+.button-spoiler {
     display: none;
 }
-
-.button-show {
-    display: none;
-}
-
-
 
 
 
 @media screen and (min-width: 768px) {
-    .content-block__show-all {
+    .button-spoiler {
         display: block;
     }
-    
+
      .swiper-pagination {
         display: none;
      }
 
      .brand {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 72px;
-        gap: 24px;
-        height: 190px;
+        display: flex;
+        gap: 16px 24px;
         overflow: hidden;
+        flex-wrap: wrap;
      }
      
-     .brand-open {
-        height: 270px;
+     .height {
+        height: 165px;
      } 
 
-     
-     .brand__inner {
+     /*.brand__inner {
         padding-bottom: 0;
+     } */
+
+     .link-brand {
         width: 224px;
-     } 
+     }
 
      .content-block__swiper {
-        padding: 24px;
+        padding: 21px;
     }
 
-    .button-hidden {
-        display: block;
-    }
-    
-    .show-all {
+    .hidden {
         display: none;
     }
 
-    .brand-height {
-        height: 190px;
+    /*.show {
+        display: block;
+    }*/
+
     }
 
+    @media screen and (min-width: 1120px) {
+        .brand {
+            gap: 16px 32px;  
+        }
+
+        .content-block__swiper {
+            padding: 24px 28px;
+        }
+
+        .link-brand {
+            width: 240px;
+         }
     }
 
 

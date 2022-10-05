@@ -1,15 +1,4 @@
-/*document.addEventListener('click', (event) => {
-  
-  
-  if ( event.target.closest('.show-more') ) {
 
-
-    return;
-  }
-
-
-})
-*/
 const slider = document.querySelector('.swiper');
 
 let mySwiper;
@@ -47,14 +36,6 @@ mobileSlider();
 
 window.addEventListener('resize', mobileSlider);
 
-
-/*сonst brandOpen = document.querySelector('.brand'); 
-const buttonShow = document.querySelector('.content-block__button--hidden');
-const showAll = document.querySelector('.content-block__button--show-all');
-const buttons = document.querySelectorAll('.button-show');
-const swiper = document.querySelector('.swiper');
-
-const buttonHiden = document.querySelector('.button-hidden')*/
 const contentBlock = document.querySelector('.content-block');
 
 function show(buttonShow) {
@@ -81,15 +62,6 @@ function hidden(buttonHidden) {
   buttonHidden.classList.add('hidden');
 }
 
-/*function hidden(buttonHidden) {
-  let parent = buttonHidden.parentElement;
-  let buttonShow = parent.querySelector('.button-show');
-  let spoiler = buttonShow.previousElementSibling;
-  spoiler.classList.add('height');
-  buttonShow.classList.remove('hidden');
-  buttonHidden.classList.add('hidden');
-} */
-
 contentBlock.addEventListener('click', function(event){
   let buttonHidden = event.target.closest('.button-hidden');
   if(buttonHidden) {
@@ -97,21 +69,6 @@ contentBlock.addEventListener('click', function(event){
   }
   return;
 })
-
-/*showAll.addEventListener('click', function() {
-  brandOpen.classList.add('brand-height');
-  buttonShow.classList.add('show');
-  showAll.classList.add('hidden');
-})
-
-buttonShow.classList.add('show');
-    event.stopPropagation()
-
-buttonShow.addEventListener('click', function() {
-  brandOpen.classList.remove('brand-height');
-  buttonShow.classList.remove('show');
-  showAll.classList.remove('hidden')
-})*/
 
 
 

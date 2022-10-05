@@ -1,193 +1,34 @@
-@import url(header.css);
-@import url(button.css);
-@import url(button-row.css);
-@import url(button-wrapper.css);
-@import url(title.css);
-@import url(header-button.css);
-@import url(logo.css);
-@import url(nav.css);
-@import url(content.css);
-@import url(button-read.css);
-@import url(main.css);
-@import url(body.css);
+@import url(blocks/header.css);
+@import url(blocks/button.css);
+@import url(blocks/button-row.css);
+@import url(blocks/button-wrapper.css);
+@import url(blocks/title.css);
+@import url(blocks/header-button.css);
+@import url(blocks/logo.css);
+@import url(blocks/nav.css);
+@import url(blocks/content.css);
+@import url(blocks/button-content.css);
+@import url(blocks/main.css);
+@import url(blocks/body.css);
 @import url(html.css);
-@import url(menu.css);
-@import url(side-nav.css);
-@import url(side-menu.css);
-@import url(mail.css);
-@import url(tel.css);
-@import url(contacts.css);
-@import url(lang.css);
-@import url(menu-header.css);
-
-@font-face {
-    font-family: TT Lakes;
-    src: url(../fonts/TTLakes-Regular.woff) format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: TT Lakes;
-    src: url(../fonts/TTLakes-Medium.woff) format('woff');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: TT Lakes;
-    src: url(../fonts/TTLakes-Bold.woff) format('woff');
-    font-weight: 700;
-}
+@import url(blocks/menu.css);
+@import url(blocks/side-nav.css);
+@import url(blocks/side-menu.css);
+@import url(blocks/mail.css);
+@import url(blocks/tel.css);
+@import url(blocks/contacts.css);
+@import url(blocks/lang.css);
+@import url(blocks/menu-header.css);
+@import url(blocks/content-block.css);
+@import url(blocks/title-text.css);
+@import url(blocks/link-brand.css);
+@import url(blocks/brand.css);
+@import url(blocks/button-spoiler.css);
+@import url(blocks/height.css);
+@import url(blocks/hidden.css);
+@import url(blocks/swiper.css);
+@import url(fonts.css);
 
 
-.content-block {
-    border-top: 1px solid #D9FFF5;
-}
-.title-text {
-    color: #7E7E82;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.content-block__title {
-    padding: 16px;
-    margin: 0;
-    background: linear-gradient(90deg,#f8f8f8 0,#fff);
-}
-
-.swiper {
-    width: auto;
-}
-
-.swiper-pagination {
-    position: relative;
-    top: 16px;
-}
-
-.link-brand {
-    display: inline-block;
-    background: #fff;
-    height: 72px;
-    width: 240px;
-}
-
-/*.brand__inner {
-    /*width: auto;
-    width: 240px;
-    padding-bottom: 34px;
-}*/
-
-.swiper-slide {
-    width: auto;
-    height: auto;
-}
-
-.swiper-slide__link {
-   display: flex;
-   justify-content: space-between;
-   border: 1px solid #EAEAEA;
-   border-radius: 6px;
-   align-items: center;
-}
-
-.content-block__swiper {
-    padding: 16px;
-   
-}
-
-.link-brand__img {
-vertical-align: middle;
-padding-left: 16px;
-}
-
-.link-brand__icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #FF3E79;
-    margin: 16px;
-}
-
-.link-brand__arrow {
-    padding: 14px 14px 14px 17px;
-}
-
-.swiper-pagination-bullet {
-   width: 12px;
-   height: 12px;
-   background-color: #818181;
-   margin-right: 12px;
-}
-
-.swiper-pagination-bullet-active {
-    background: #B5B6BC;
-}
-
-.button-spoiler {
-    display: none;
-}
-
-
-
-@media screen and (min-width: 768px) {
-    .button-spoiler {
-        display: block;
-    }
-
-     .swiper-pagination {
-        display: none;
-     }
-
-     .brand {
-        display: flex;
-        gap: 16px 24px;
-        overflow: hidden;
-        flex-wrap: wrap;
-     }
-     
-     .height {
-        height: 165px;
-     } 
-
-     /*.brand__inner {
-        padding-bottom: 0;
-     } */
-
-     .link-brand {
-        width: 224px;
-     }
-
-     .content-block__swiper {
-        padding: 21px;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    /*.show {
-        display: block;
-    }*/
-
-    }
-
-    @media screen and (min-width: 1120px) {
-        .brand {
-            gap: 16px 32px;  
-        }
-
-        .content-block__swiper {
-            padding: 24px 28px;
-        }
-
-        .link-brand {
-            width: 240px;
-         }
-    }
-
-
-    
     
     

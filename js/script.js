@@ -10,9 +10,6 @@
 
 })
 */
-
-
-
 const slider = document.querySelector('.swiper');
 
 let mySwiper;
@@ -63,9 +60,8 @@ const contentBlock = document.querySelector('.content-block');
 function show(buttonShow) {
   let spoiler = buttonShow.previousElementSibling;
   spoiler.classList.remove('height');
-  let parent = buttonShow.parentElement;
-  let buttonHide = parent.querySelector('.button-hidden');
-  buttonHide.classList.remove('hidden');
+  let buttonHidden = buttonShow.nextElementSibling;
+  buttonHidden.classList.remove('hidden');
   buttonShow.classList.add('hidden');
 }
 
@@ -78,13 +74,21 @@ contentBlock.addEventListener('click', function(event) {
 })
 
 function hidden(buttonHidden) {
+  let buttonShow = buttonHidden.previousElementSibling;
+  let spoiler = buttonShow.previousElementSibling;
+  spoiler.classList.add('height');
+  buttonShow.classList.remove('hidden');
+  buttonHidden.classList.add('hidden');
+}
+
+/*function hidden(buttonHidden) {
   let parent = buttonHidden.parentElement;
   let buttonShow = parent.querySelector('.button-show');
   let spoiler = buttonShow.previousElementSibling;
   spoiler.classList.add('height');
   buttonShow.classList.remove('hidden');
   buttonHidden.classList.add('hidden');
-}
+} */
 
 contentBlock.addEventListener('click', function(event){
   let buttonHidden = event.target.closest('.button-hidden');

@@ -1,0 +1,44 @@
+.link-brand {
+    display: inline-block;
+    background: #fff;
+    height: 72px;
+    width: 240px;
+    display: flex;
+   justify-content: space-between;
+   border: 1px solid #EAEAEA;
+   border-radius: 6px;
+   align-items: center;
+}
+
+.link-brand__img {
+    vertical-align: middle;
+    padding-left: 16px;
+}
+    
+.link-brand__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+    margin: 16px;
+}
+    
+.link-brand__icon:hover {
+    background-color: #ffdde7;;
+}
+    
+.link-brand__arrow {
+    padding: 14px 14px 14px 17px;
+}
+
+@media screen and (min-width: 768px) { 
+    .link-brand {
+        width: 224px;
+     }
+}
+
+@media screen and (min-width: 1120px) {
+    .link-brand {
+        width: 240px;
+     }
+}

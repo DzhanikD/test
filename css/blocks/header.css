@@ -11,12 +11,10 @@
     align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #D9FFF5;
-    justify-content: space-between;
 }
 
 .header__logo {
-    position: absolute;
-    left: 72px;
+   margin-left: 16.73px;
 }
 
 .header__logo::before {
@@ -27,9 +25,15 @@
     background-color: #EAEAEA;
     border-radius: 1px;
     vertical-align: middle;
-    left: -22px;
-    top: 10px;
+    left: 85px;
+    top: 30px;
     display: none;
+}
+
+
+.button-head {
+    display: flex;
+    margin-left: auto;
 }
  
 @media screen and (min-width: 768px) {
@@ -38,7 +42,7 @@
     } 
         
     .header__logo {
-        left: 106px;
+       margin-left: 42.73px;
     }
 
     .header__page {

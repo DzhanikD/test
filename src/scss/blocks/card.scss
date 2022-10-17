@@ -1,0 +1,144 @@
+@media screen and (min-width: 768px) {
+        .card {
+            display: flex;
+            gap: 16px 24px;
+            overflow: hidden;
+            flex-wrap: wrap;
+         }
+    }
+    
+@media screen and (min-width: 1120px) {
+        .card {
+            gap: 16px 32px;  
+        }
+    }
+
+.card {
+    &__table-item {
+        @include card;
+        flex-direction: column;
+        width: 260px;
+        height: 200px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    &__table-item {
+        @include card;
+        flex-direction: column;
+        width: 260px;
+        height: 200px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    &__brand-link {
+        @include card;
+        height: 72px;
+        align-items: center;
+        width: 240px;
+    }
+    
+    &__brand-img {
+        vertical-align: middle;
+        padding-left: 16px;
+    }
+        
+    &__brand-icon {
+        @include icon;
+        margin: 16px;
+    }
+        
+    &__brand-link:hover {
+        background-color: #faf0f3;
+    }
+        
+    &__arrow {
+        padding: 14px 14px 14px 17px;
+    }
+
+    &__services-wpapper {
+        margin: auto;
+    }
+
+    &__services-span {
+    margin-left: 16px;
+    margin-top: 16px;
+    }
+
+    &__services-link {
+    @include card;
+    height: 160px;
+    text-decoration: none;
+    color: $color8;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    width: 240px;
+    }
+
+    &__servises-icon {
+        @include icon;
+        margin-top: auto;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+    
+    &__table-subtitle {
+        color: $color5;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 4px;
+        flex-basis: 18%;
+    }
+
+    &__table-text {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        justify-content: space-between;
+   
+}
+    
+    @media screen and (min-width: 768px) { 
+        &__brand-link {
+            width: 224px;
+         }
+
+        &__table-content {
+            flex-basis: 18%;
+        }
+    
+        &__table-content--1 {
+            flex-basis: 48%;
+        }
+    
+        &__table-content--3 {
+            flex-basis: 36%;
+        }
+
+        &__services-link {
+            width: 224px;
+        }
+
+        &__table-item {
+            flex-direction: row;
+            height: auto;
+            border: none;
+            border-bottom: 1px solid $color4;
+            align-items: center;
+            border-radius: 0;
+            width: auto;
+         }
+    }
+    
+    @media screen and (min-width: 1120px) {
+        &__brand-link {
+            width: 240px;
+        }
+
+         &__services-link {
+            width: 240px;
+        }
+    }
+}

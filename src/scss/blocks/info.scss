@@ -1,0 +1,52 @@
+.info {
+    width: 288px;
+    padding-left: 16px;
+    border-bottom: 1px solid $color7;
+    margin-top: 16px;
+
+    &__span {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    &__button {
+        border: none;
+        background-color: $color3;
+        padding: 0;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    
+    &__array {
+        padding-left: 5px;
+        position: relative;
+        top: 2px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 0;
+        margin-bottom: 14px;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .info {
+        width: 421px;
+        padding-left: 24px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .info {
+        padding-left: 32px;
+    }
+}

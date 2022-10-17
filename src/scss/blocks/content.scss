@@ -1,0 +1,68 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__wrapper {
+        padding-left: 16px;
+    }
+    
+    &__text {
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__wrapper{
+            padding-left: 0;
+        }
+    
+        &__text{
+            
+            overflow: hidden;
+            width: 87%;
+        }
+    }
+
+    @media screen and (min-width: 1120px) {
+        &__text {
+            width: 92%;
+        }
+    
+        &__about-us {
+            line-height: 20px;
+        }
+    }
+    
+    
+    &__about-us, p {
+        margin: 0px;
+        line-height: 18px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 0;  
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    &__read-more {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .content {
+        padding-left: 34px;
+    }
+}
+

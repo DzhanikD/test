@@ -1,0 +1,15 @@
+.button-order {
+    width: 119px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: $color;
+    color: $color6;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}

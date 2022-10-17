@@ -1,0 +1,26 @@
+.button-wrapper {
+    display: flex;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $color4;
+        border-radius: 1px;
+        right: 130px;
+        top: 26px;    
+    }
+    
+    &__contacts:not(:last-child) {
+        margin-right: 16px;
+    }   
+
+    @media screen and (min-width: 768px) {
+        &::before {
+            right: 140px;
+        }
+    }
+}
+
+

@@ -1,0 +1,42 @@
+.price-block {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title-table {
+        display: none; 
+    }
+    
+    &__title-table > .card__table-subtitle {
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) { 
+        &__table {
+            display: flex;
+            flex-direction: column;
+            gap: inherit;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-color: $color6;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        &__title-table {
+            display: flex;
+            padding-left: 41px;
+            padding-top: 31px;
+        }
+    }
+
+}

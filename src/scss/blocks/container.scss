@@ -1,0 +1,12 @@
+@media screen and (min-width: 1440px) {
+    .container {
+       display: flex;
+    }
+}
+
+@media (min-width: 1650px) {
+    .container {
+        max-width: 1650px;
+        margin: 0 auto;
+    }
+}

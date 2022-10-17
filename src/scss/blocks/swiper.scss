@@ -1,0 +1,49 @@
+.swiper {
+    width: auto;
+}
+
+.swiper3 {
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 16px;
+}
+
+.swiper-slide {
+    width: auto;
+    height: auto;
+}
+
+.swiper2 {
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: $color12;
+   margin-right: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background: $color9;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-pagination {
+       display: none;
+    }
+
+    .swiper3 {
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .swiper3 {
+        padding-bottom: 32px;
+    }
+}

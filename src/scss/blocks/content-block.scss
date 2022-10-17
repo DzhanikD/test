@@ -1,0 +1,37 @@
+.content-block {
+    border-top: 1px solid $color7;
+
+    &__title {
+        padding: 16px;
+        margin: 0;
+        background: linear-gradient(90deg,$color3 0,$color6);
+    }
+    
+    &__swiper {
+        padding: 16px;
+        padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__swiper {
+            padding: 21px;
+        }
+
+        &__title {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    
+    }
+
+    @media screen and (min-width: 1440px) {
+        &__swiper {
+            padding: 28px;
+        }
+
+        &__title {
+            padding-left: 32px;
+            padding-right: 32px;
+            }  
+    }
+}

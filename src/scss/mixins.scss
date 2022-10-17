@@ -1,0 +1,20 @@
+@mixin font ($f, $fw) {
+    font-family: $f;
+    font-weight: $fw;
+}
+
+@mixin icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color;
+}
+
+@mixin card {
+    display: inline-block;
+    display: flex;
+    border: 1px solid $color4;
+    background: $color6;
+    justify-content: space-between;
+    border-radius: 6px;
+}

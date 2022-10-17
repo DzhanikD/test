@@ -1,0 +1,45 @@
+.nav {
+    @media screen and (min-width: 1120px) {
+        &__list {
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        padding: 16px;
+        list-style-type: none;
+        overflow: scroll;
+    }
+    
+    &__link {
+        color: $color5;
+        display: inline-block;
+        padding: 8px 13px;
+        border: 2px solid transparent;
+        height: 40px;
+        white-space: nowrap;
+        text-decoration: none;
+
+        &:hover {
+            color: $color;
+        }
+    }
+    
+    &__link--active {
+        border: 2px solid $color10;
+        background-color: $color6;
+        border-radius: 6px;
+    }
+    
+    &__list::-webkit-scrollbar {
+        width: 0;
+    } 
+}
+
+

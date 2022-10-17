@@ -1,3 +1,3 @@
 # test
-https://dzhanikd.github.io/test/
+https://dzhanikd.github.io/test/index
 

@@ -17,6 +17,7 @@ function clickButton  () {
         feedback.classList.toggle('modal--open');
         opasity.classList.toggle('opasity--open');
         modalFeedbackWrapper.classList.toggle('modal__wrapper--open');
+        feedback.querySelector('.modal__input').focus();
     }
 
     function modalCall () {
@@ -26,6 +27,7 @@ function clickButton  () {
         call.classList.toggle('modal--open');
         opasity.classList.toggle('opasity--open');
         modalCallWrapper.classList.toggle('modal__wrapper--open');
+        call.querySelector('.modal__input').focus();
     }
 
     function opasity () {

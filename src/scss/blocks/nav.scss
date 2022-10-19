@@ -40,6 +40,11 @@
     &__list::-webkit-scrollbar {
         width: 0;
     } 
+
+    &__list {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
 }
 
 

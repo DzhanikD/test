@@ -5,11 +5,17 @@
     position: fixed;
     z-index: 2000;
     height: 100%;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
     
+    &::-webkit-scrollbar {
+        width: 0;
+    } 
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -34,6 +40,7 @@
         display: flex;
         padding: 23px 24px;
         align-items: center;
+        justify-content: space-between;
     }
 
     &--open {

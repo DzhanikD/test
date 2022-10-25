@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 756px;
+        height: 100%;
     }
 
     &__list {
@@ -65,9 +65,9 @@
             display: none;
         }
 
-        // &__wrapper {
-        //     justify-content: normal;
-        // }
+        &__wrapper {
+            height: 756px;
+        }
 
         // &__inner {
         //     margin-bottom: 241px;

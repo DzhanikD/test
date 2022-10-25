@@ -286,7 +286,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 756px; }
+    height: 100%; }
   .side-menu__list {
     padding: 27px 24px; }
   .side-menu__buttons {
@@ -313,7 +313,9 @@ body {
       .side-menu__list {
         padding-top: 37.19px; }
       .side-menu__button {
-        display: none; } }
+        display: none; }
+      .side-menu__wrapper {
+        height: 756px; } }
 
 .mail {
   line-height: 24px;

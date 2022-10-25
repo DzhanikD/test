@@ -9,7 +9,7 @@
 <body>
   <div class="container"> 
     <div class="menu">
-        <div class="opasity"></div> 
+        <div class="container__opasity"></div> 
         <div class="side-menu">
             <div class="menu-header side-menu__menu-header">
                <div class="menu-header__wrapper">
@@ -25,7 +25,7 @@
                 </button>
             </div>
             <div class="side-menu__wrapper">
-                <nav class="side-nav">
+                <nav class="side-nav side-menu__inner">
                     <ul class="side-nav__list side-menu__list">
                         <li class="side-nav__item"><a class="side-nav__link side-nav__link--active">Ремонт техники</a></li>
                         <li class="side-nav__item"><a class="side-nav__link">Услуги и сервисы</a></li>
@@ -39,10 +39,10 @@
                 </nav>
                 <div class="contacts side-menu__contacts">
                     <div class="button-row side-menu__buttons">
-                        <button class="button button-row__contacts button-call">
+                        <button class="button button-row__contacts button-modal" data-modal=".modal-call">
                             <img src="img/back call.svg" class="button__icon" alt="Обратный звонок">
                         </button>
-                        <button class="button button-row__contacts button-feedback">
+                        <button class="button button-row__contacts button-modal" data-modal=".modal-feedback">
                             <img src="img/message.svg" class="button__icon" alt="Отправить нам сообщение">
                         </button>
                         <button class="button button-row__contacts">
@@ -64,7 +64,7 @@
         <div class="modal-call modal__container">
             <div class="modal__opasity"></div>
             <div class="modal__wrapper">
-                <button class="button modal__button-close button-call">
+                <button class="button modal__button-close button-modal" data-modal=".modal-call">
                     <img src="img/menu.svg" class="button__icon" alt="Меню">
                 </button> 
                 <h2 class="title modal__title">Заказать звонок</h2>
@@ -85,7 +85,7 @@
         <div class="modal-feedback modal__container">
             <div class="modal__opasity"></div>
             <div class="modal__wrapper">
-                <button class="button modal__button-close button-feedback">
+                <button class="button modal__button-close button-modal" data-modal=".modal-feedback">
                     <img src="img/menu.svg" class="button__icon" alt="Меню">
                 </button> 
                 <h2 class="title modal__title">Обратная связь</h2>
@@ -111,10 +111,10 @@
         <div class="header__page">
             <button class="button header__button-burger"><img src="img/burger.svg" class="button__icon" alt="Меню"></button>
             <a href="#" class="logo header__logo"><img src="img/logotype.svg" alt="Логотип"></a>
-            <div class="button-head">
+            <div class="header__button">
                 <div class="button-row">
-                    <button class="button button-row__contacts button-call"><img src="img/back call.svg" class="button__icon" alt="Обратный звонок"></button>
-                    <button class="button button-row__contacts button-feedback"><img src="img/message.svg" class="button__icon" alt="Отправить нам сообщение"></button>
+                    <button class="button button-row__contacts button-modal" data-modal=".modal-call"><img src="img/back call.svg" class="button__icon" alt="Обратный звонок"></button>
+                    <button class="button button-row__contacts button-modal" data-modal=".modal-feedback"><img src="img/message.svg" class="button__icon" alt="Отправить нам сообщение"></button>
                     <button class="button button-row__contacts"><img src="img/personal_area.svg" class="button__icon" alt="Личный кабинет"></button>
                 </div>
                 <div class="button-wrapper">
@@ -150,7 +150,7 @@
         </nav>
         <div class="content main__content">
             <div class="content__wrapper">
-                <div class="content__text height-text">
+                <div class="content__text content--height">
                     <p class="content__about-us">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
                     гарантией производителя.</p>
@@ -158,8 +158,14 @@
                     <p class="content__about-us">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
                     большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
                     и, в свою очередь советуют нас родным и близким.
-                   </p>
-                </div> 
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                    и, в свою очередь советуют нас родным и близким.
+                    </p><p><br></p>
+                    <p class="content__about-us">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                    большое количество постоянных клиентов.
+                    </p><p>
+                </p></div> 
                 <button class="button-content content__read-more">
                     <img src="img/text.svg" alt="читать далее">
                     <span class="button-content__read-text">Читать далее</span>
@@ -171,7 +177,7 @@
             <h2 class="title-text content-block__title">Ремонт техники различных брендов</h2>
             <div class="swiper content-block__swiper" data-mobile="false">
                 
-                <ul class="swiper-wrapper card height">
+                <ul class="swiper-wrapper card content-block--height">
                 
                     <li class="swiper-slide">
                         <a href="#" class="card__brand-link">
@@ -264,7 +270,7 @@
                         </a>
                     </li>
                 </ul> 
-                <button class="button-content button-spoiler">
+                <button class="button-content content-block__button-spoiler">
                     <img src="img/text.svg" alt="Показать все">
                     <span class="button-content__read-text">Показать все</span>
                 </button>
@@ -273,7 +279,7 @@
             <h2 class="title-text content-block__title">Ремонт различных видов техники</h2>
             <div class="swiper2 content-block__swiper" data-mobile="false">
                 
-                <ul class="swiper-wrapper card height">
+                <ul class="swiper-wrapper card content-block--height">
                 
                     <li class="swiper-slide">
                         <a href="#" class="card__services-link">
@@ -309,8 +315,24 @@
                             </div>
                         </a>
                     </li>
+                    <li class="swiper-slide">
+                        <a href="#" class="card__services-link">
+                            <div class="card__services-span">Ремонт мониторов</div>
+                            <div class="card__servises-icon">
+                                <img src="img/arrow.svg" class="card__arrow" alt="arrow">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#" class="card__services-link">
+                            <div class="card__services-span">Ремонт ПК</div>
+                            <div class="card__servises-icon">
+                                <img src="img/arrow.svg" class="card__arrow" alt="arrow">
+                            </div>
+                        </a>
+                    </li>
                 </ul> 
-                <button class="button-content button-spoiler">
+                <button class="button-content content-block__button-spoiler">
                     <img src="img/text.svg" alt="Показать все">
                     <span class="button-content__read-text">Показать все</span>
                 </button>
@@ -320,9 +342,9 @@
             <div class="price-block">
                 <h2 class="title-text content-block__title">Цены на услуги</h2>
                 <div class="price-block__title-table">
-                    <div class="card__table-subtitle card__table-content--1">Ремонтные услуги</div>
-                    <div class="card__table-subtitle">Цена</div>
-                    <div class="card__table-subtitle">Срок</div>
+                    <div class="price-block__subtitle price-block__subtitle-content--1">Ремонтные услуги</div>
+                    <div class="price-block__subtitle">Цена</div>
+                    <div class="price-block__subtitle">Срок</div>
                 </div>
                 <div class="swiper3 content-block__swiper" data-mobile="false">
                     
@@ -458,7 +480,7 @@
         </section>
         <footer class="footer main__footer">
             <p class="footer__text">© 2019 CPS<br> Разработано командой Apesong </p>
-            <p class="footer__text">Политика конфиденциальности</p>
+            <p class="footer__text"><a class="footer__link">Политика конфиденциальности</a></p>
             <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
         </footer>  
     </main>

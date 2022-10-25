@@ -6,11 +6,11 @@
     cursor: pointer;
 
     &--active {
-        color: $color5;
+        color: $gray-600;
     }
     
     &:hover {
-        color: $color;
+        color: $pink-500;
     }
 }
 

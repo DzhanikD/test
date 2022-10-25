@@ -5,7 +5,7 @@
     border: 0;
     padding: 0;
     border-radius: 50%;
-    background-color: $color;
+    background-color: $pink-500;
     cursor: pointer;
     display: flex;
     transition: all 0.4s ease-in-out;
@@ -16,7 +16,7 @@
     }
     
     &:hover .header-button__text {
-        color: $color;
+        color: $pink-500;
     }
     
     &__icon {

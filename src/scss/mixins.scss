@@ -7,14 +7,30 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid $color;
+    border: 2px solid $pink-500;
 }
 
 @mixin card {
     display: inline-block;
     display: flex;
-    border: 1px solid $color4;
-    background: $color6;
+    border: 1px solid $gray-200;
+    background: $white;
     justify-content: space-between;
     border-radius: 6px;
+}
+
+@mixin  price-block {
+    color: $gray-600;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 4px;
+    flex-basis: 18%;
+}
+
+@mixin displayBlok {
+    display: block;
+}
+
+@mixin displayNone {
+    display: none;
 }

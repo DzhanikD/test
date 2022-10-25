@@ -1,81 +1,39 @@
 function clickButton  () {
     const container = document.querySelector('.container');
 
-    function menu () {
-        let menu = container.querySelector('.menu');
-        let opasity = container.querySelector('.opasity');
-        let sideMenu = container.querySelector('.side-menu');
-        menu.classList.toggle('menu--open');
-        opasity.classList.toggle('opasity--open');
-        sideMenu.classList.toggle('side-menu--open');
-    }
-
-    function modalFeedback () {
-        let feedback = container.querySelector('.modal-feedback');
-        let opasity = feedback.querySelector('.modal__opasity');
-        let modalFeedbackWrapper = feedback.querySelector('.modal__wrapper');
-        feedback.classList.toggle('modal--open');
-        opasity.classList.toggle('opasity--open');
-        modalFeedbackWrapper.classList.toggle('modal__wrapper--open');
-        feedback.querySelector('.modal__input').focus();
-    }
-
-    function modalCall () {
-        let call = container.querySelector('.modal-call');
-        let opasity = call.querySelector('.modal__opasity');
-        let modalCallWrapper = call.querySelector('.modal__wrapper');
-        call.classList.toggle('modal--open');
-        opasity.classList.toggle('opasity--open');
-        modalCallWrapper.classList.toggle('modal__wrapper--open');
-        call.querySelector('.modal__input').focus();
-    }
-
-    function opasity () {
-        let menu = container.querySelector('.menu');
-        let opasity = container.querySelector('.opasity');
-        let sideMenu = container.querySelector('.side-menu');
-        menu.classList.remove('menu--open');
-        opasity.classList.remove('opasity--open');
-        sideMenu.classList.remove('side-menu--open');
+    function toogleModal(classModal) {
+        let modal = container.querySelector(classModal);
+        let opasity = modal.querySelector('.modal__opasity');
+        let modalWrapper = modal.querySelector('.modal__wrapper');
+        modal.classList.toggle('modal--open');
+        opasity.classList.toggle('container__opasity--open');
+        modalWrapper.classList.toggle('modal__wrapper--open');
+        modal.querySelector('.modal__input').focus();
     }
 
     function opasityModalClick () {
         let modalOpen = container.querySelector('.modal--open');
         let opasity = modalOpen.querySelector('.modal__opasity');
         let modalFeedbackWrapper = modalOpen.querySelector('.modal__wrapper');
-
-        opasity.classList.remove('opasity--open');
+        opasity.classList.remove('container__opasity--open');
         modalFeedbackWrapper.classList.remove('modal__wrapper--open');
         modalOpen.classList.remove('modal--open');
     }
 
     container.addEventListener('click', function(event) {
-    let menuOpen = event.target.closest('.header__button-burger');
-    let modalFeedbackOpen = event.target.closest('.button-feedback');
-    let modalCallOpen = event.target.closest('.button-call');
-    let opasityMenu = event.target.closest('.opasity');
+    let modalOpen = event.target.closest('.button-modal');
     let opasityModal = event.target.closest('.modal__opasity');
-    
-    if (menuOpen) {
-        menu();
+    if (modalOpen) {
+            toogleModal(modalOpen.dataset.modal);
+            return;
         }
-
-    if (modalFeedbackOpen) {
-            modalFeedback();
-        }
-
-    if (modalCallOpen) {
-            modalCall();
-        }
-    
-    if (opasityMenu) {
-            opasity()
-        }
-
+        
     if (opasityModal) {
             opasityModalClick()
+            return;
         }
     }
     )
 }
- export default clickButton;
+
+export default clickButton;

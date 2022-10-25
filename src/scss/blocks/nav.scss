@@ -18,7 +18,7 @@
     }
     
     &__link {
-        color: $color5;
+        color: $gray-600;
         display: inline-block;
         padding: 8px 13px;
         border: 2px solid transparent;
@@ -27,13 +27,13 @@
         text-decoration: none;
 
         &:hover {
-            color: $color;
+            color: $pink-500;
         }
     }
     
     &__link--active {
-        border: 2px solid $color10;
-        background-color: $color6;
+        border: 2px solid $teal-200;
+        background-color: $white;
         border-radius: 6px;
     }
     

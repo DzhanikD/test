@@ -1,7 +1,7 @@
 .info {
     width: 288px;
     padding-left: 16px;
-    border-bottom: 1px solid $color7;
+    border-bottom: 1px solid $teal-100;
     margin-top: 16px;
 
     &__span {
@@ -14,10 +14,14 @@
     
     &__button {
         border: none;
-        background-color: $color3;
+        background-color: $gray-100;
         padding: 0;
         cursor: pointer;
         margin-bottom: 40px;
+    }
+
+    &__button:hover {
+        color: $pink-500;
     }
     
     &__array {

@@ -84,11 +84,11 @@
             padding-bottom: 0;
             }
         
-            &__img {
-                max-width: 530px;
-                max-height: max-content;
-                }
-            }    
+        &__img {
+            max-width: 530px;
+            max-height: 305px;
+            }
+        }    
 
         @media screen and (min-width: 1440px) {
             &__nav {

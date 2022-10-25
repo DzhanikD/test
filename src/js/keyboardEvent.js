@@ -3,21 +3,21 @@ function keyboardEvent () {
     document.addEventListener('keyup', function(event) {
     if (event.code === 'Escape') {
         let menu = container.querySelector('.menu');
-        let opasity = container.querySelector('.opasity');
+        let opasity = container.querySelector('.container__opasity');
         let sideMenu = container.querySelector('.side-menu');
         menu.classList.remove('menu--open');
-        opasity.classList.remove('opasity--open');
+        opasity.classList.remove('container__opasity--open');
         sideMenu.classList.remove('side-menu--open');
-
-        let modalOpen = container.querySelector('.modal--open');
-        let opasity2 = modalOpen.querySelector('.modal__opasity');
-        let modalFeedbackWrapper = modalOpen.querySelector('.modal__wrapper');
-        opasity2.classList.remove('opasity--open');
+        let modal;
+        if (modal = container.querySelector('.modal--open')) {
+        let opasity2 = modal.querySelector('.modal__opasity');
+        let modalFeedbackWrapper = modal.querySelector('.modal__wrapper');
+        opasity2.classList.remove('container__opasity--open');
         modalFeedbackWrapper.classList.remove('modal__wrapper--open');
-        modalOpen.classList.remove('modal--open');
+        modal.classList.remove('modal--open')
+        }
     }
    })
-
 }
 
 export default keyboardEvent;

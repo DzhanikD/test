@@ -5,18 +5,21 @@
         justify-content: space-between;
     }
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     &__title-table {
         display: none; 
     }
     
     &__title-table > .card__table-subtitle {
         padding-bottom: 0;
+    }
+
+    &__subtitle {
+        @include price-block;
+        flex-basis: 17%;
+    }
+
+    &__subtitle-content--1 {
+        flex-basis: 45%;
     }
 
     @media screen and (min-width: 768px) { 
@@ -26,7 +29,7 @@
             gap: inherit;
             padding-left: 16px;
             padding-right: 16px;
-            background-color: $color6;
+            background-color: $white;
             width: 100%;
             box-sizing: border-box;
             border-radius: 6px;

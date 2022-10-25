@@ -17,14 +17,14 @@
     }
     
     &__link--active {
-        color: $color5;
+        color: $gray-600;
     }
     
     &__link--active::before {
         content: "";
         position: absolute;
         height: 32px;
-        background-color: $color11;
+        background-color: $teal-400;
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
         z-index: 10;
@@ -35,6 +35,6 @@
     
     &__item:hover{
         cursor: pointer;
-        color: $color;
+        color: $pink-500;
     }
 }

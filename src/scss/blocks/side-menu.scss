@@ -1,7 +1,7 @@
 .side-menu {
     transform: translate(-320px);
     width: 320px;
-    background-color: $color6;
+    background-color: $white;
     position: fixed;
     z-index: 2000;
     height: 100%;
@@ -45,7 +45,7 @@
 
     &--open {
         transform: translate(0px);
-        box-shadow: 0.5px 0px 20px $color5;
+        box-shadow: 0.5px 0px 20px $gray-600;
     }
 
     @media screen and (min-width: 1440px) {
@@ -63,6 +63,14 @@
         
         &__button {
             display: none;
+        }
+
+        &__wrapper {
+            justify-content: normal;
+        }
+
+        &__inner {
+            margin-bottom: 241px;
         }
 
         transform: translate(0px);

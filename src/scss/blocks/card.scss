@@ -50,7 +50,7 @@
     }
         
     &__brand-link:hover {
-        background-color: #faf0f3;
+        background-color: $pink-100;
     }
         
     &__arrow {
@@ -70,11 +70,15 @@
     @include card;
     height: 160px;
     text-decoration: none;
-    color: $color8;
+    color: $black;
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight: 600;
     width: 240px;
+    }
+
+    &__services-link:hover {
+        background-color: $pink-100;
     }
 
     &__servises-icon {
@@ -85,11 +89,7 @@
     }
     
     &__table-subtitle {
-        color: $color5;
-        font-size: 14px;
-        line-height: 16px;
-        padding-bottom: 4px;
-        flex-basis: 18%;
+       @include price-block;
     }
 
     &__table-text {
@@ -121,11 +121,15 @@
             width: 224px;
         }
 
+        &__table-subtitle {
+            display: none;
+        }
+
         &__table-item {
             flex-direction: row;
             height: auto;
             border: none;
-            border-bottom: 1px solid $color4;
+            border-bottom: 1px solid $gray-200;
             align-items: center;
             border-radius: 0;
             width: auto;

@@ -11,6 +11,10 @@
         overflow: hidden;
     }
 
+    &--height {
+        height: 90px;
+    }
+
     @media screen and (min-width: 768px) {
         &__wrapper{
             padding-left: 0;
@@ -20,6 +24,10 @@
             
             overflow: hidden;
             width: 87%;
+        }
+
+        &--height {
+            height: 160px;
         }
     }
 

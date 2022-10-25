@@ -19,11 +19,11 @@
             padding-right: 32px;
         }
         &:hover {
-            color: $color;
+            color: $pink-500;
         }
         
         &:hover .button {
-            background-color: $color2;
+            background-color: $pink-200;
             transform: scale(1.2) rotate(360deg);
             transition-duration: 0.5s;;
         }

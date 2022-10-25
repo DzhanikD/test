@@ -12,13 +12,18 @@
         height: 88px;
         display: flex;
         align-items: center;
-        background-color: $color6;
-        border-bottom: 1px solid #D9FFF5;
+        background-color: $white;
+        border-bottom: 1px solid $teal-100;
         }
 
         &__logo {
             margin-left: 16.73px;
             
+        }
+
+        &__button {
+            display: flex;
+            margin-left: auto;
         }
 
         @media screen and (min-width: 768px) {   
@@ -36,7 +41,7 @@
                 position: absolute;
                 width: 2px;
                 height: 32px;
-                background-color: $color4;
+                background-color: $gray-200;
                 border-radius: 1px;
                 left: 85px;
                 top: 30px;

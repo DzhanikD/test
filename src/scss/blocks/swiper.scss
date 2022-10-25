@@ -24,12 +24,12 @@
 .swiper-pagination-bullet {
    width: 12px;
    height: 12px;
-   background-color: $color12;
+   background-color: $gray-700;
    margin-right: 12px;
 }
 
 .swiper-pagination-bullet-active {
-    background: $color9;
+    background: $gray-500;
 }
 
 @media screen and (min-width: 768px) {
